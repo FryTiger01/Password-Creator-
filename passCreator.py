@@ -1,4 +1,3 @@
-from ast import For
 from colorama import Fore, Back, Style
 import random
 import string
@@ -10,7 +9,7 @@ all = lower + upper + symbols + numbers
 
 while True:
     print(Fore.WHITE +"choose a option : ")
-    print(Fore.GREEN + "1) Create a password\n2) Exit")
+    print(Fore.GREEN + "1) Create a password\n2) Exit\n3) Help")
     choice = input(Fore.MAGENTA + "Enter a choose :")
     if choice == "1":
         length = int(input("Enter a lentght of password : "))
@@ -19,5 +18,7 @@ while True:
         print("-"*40)
     elif choice == "2":
         break
+    elif choice == "3":
+        print("1)-> create a pass \n 2)-> enter a lengrh pass \n3)-> printed pass")
     else:
         print(Fore.RED + "Choose Invalid!")
