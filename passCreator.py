@@ -1,4 +1,6 @@
 from colorama import Fore, Back, Style
+import pyfiglet
+
 import random
 import string
 lower = string.ascii_lowercase
@@ -6,7 +8,7 @@ upper = string.ascii_uppercase
 symbols = "/*-+\\{}[]()<=>|_&^%$#@!?.,"
 numbers = "0123456789"
 all = lower + upper + symbols + numbers
-
+print(pyfiglet.figlet_format("Pass Creator"))
 while True:
     print(Fore.WHITE +"choose a option : ")
     print(Fore.GREEN + "1) Create a password\n2) Exit\n3) Help")
